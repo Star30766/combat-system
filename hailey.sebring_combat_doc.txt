@@ -1,0 +1,42 @@
+﻿Pseudocode
+1. Define Character Class:
+   - Define a class called Character.
+   - Inside the class, define attributes for a character:
+     - Name
+     - Hit points
+     - Hit chance
+     - Max damage
+     - Armor
+
+
+2. Character Initialization:
+   - Implement an initializer method to set the initial values for the character attributes.
+   - Allow customization of these attributes upon character creation.
+
+
+3. Print Character Stats:
+   - Implement a method to print out the statistics of a character.
+   - Print the character's name, hit points, hit chance, max damage, and armor.
+
+
+4. Combat System:
+   - Implement a function called fight that simulates combat between two characters.
+   - This function should take two Character objects as input parameters.
+
+
+5. Combat Sequence:
+   - Inside the fight function, repeatedly execute combat turns until one character's hit points reach zero or below.
+   - In each turn:
+     - Determine if the attacking character lands a hit based on their hit chance.
+     - If the attack lands:
+       - Calculate the damage inflicted by generating a random number within the range of max damage.
+       - Subtract the damage from the opponent's hit points, considering their armor.
+       - Output the result of the hit, including the damage dealt and the remaining hit points of the opponent.
+     - If the attack misses, output a message indicating a miss.
+     - Check if the opponent's hit points are zero or below after each attack to determine the winner.
+
+
+6. User Interaction:
+   - Provide a simple user interface to start the combat simulation.
+   - Allow the user to customize character attributes or use default values.
+   - Output the progress of the combat simulation, including each attack and the final result.
